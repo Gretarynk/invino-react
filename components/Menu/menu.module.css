@@ -1,13 +1,15 @@
 .menuWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px 0 20px
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 0 20px;
+}
 
-  @media screen and (max-width: 769px){
-
-    .menuImage{
-      padding-top: 30px;
-    }
+@media screen and (max-width: 769px) {
+  .menuWrapper {
+    margin-top: 40px;
   }
+  .menuImage {
+    padding-top: 30px;
+  }
+}

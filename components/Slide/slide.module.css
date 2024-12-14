@@ -79,5 +79,9 @@
     .textWrapper {
       padding: 30px;
     }
+    .infoText {
+      font-weight: 400;
+      font-size: 17px;
+    }
   }
   
