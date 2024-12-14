@@ -1,5 +1,5 @@
 import PageTemplate from "@/components/PageTemplate/pageTemplate";
-import Contact, { ContactProps } from "@/components/Contact/contact";
+import Contact, { ContactProps} from "@/components/Contact/contact";
 
 export async function getStaticProps() {
     const contactData = {
