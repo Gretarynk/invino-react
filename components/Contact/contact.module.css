@@ -32,7 +32,6 @@
     gap: 10px;
   }
   .infoText {
-    font-family: var(--font-family-base);
     font-weight: 300;
     font-size: 16px;
     padding: 10px;
@@ -54,3 +53,13 @@
     padding-top: 20px ;
   }
   
+  @media screen and (max-width: 769px) {
+    .blackBox1{
+      width: 70%;
+    }
+
+    .infoText {
+      font-weight: 400;
+      font-size: 17px;
+    }
+  }
