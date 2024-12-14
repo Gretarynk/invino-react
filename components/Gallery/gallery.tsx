@@ -13,7 +13,8 @@ interface GalleryProps {
   onImageClick: (index: number) => void;
   currentImage?: string;
   currentTitle?:string;
-  onCloseModal: () => void;
+  // onCloseModal: () => void;
+  onCloseModal: (e: React.MouseEvent<HTMLDivElement>) => void;
   onPrev: () => void;
   onNext: () => void;
   isModalOpen: boolean;
