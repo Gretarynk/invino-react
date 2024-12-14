@@ -1,0 +1,22 @@
+
+ .mainBox{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Use min-height to ensure wrapper takes full viewport */
+    width: 100%;
+    margin: 0 !important;
+    /* background-color: black; */
+    padding: 0 !important;
+    
+   
+   
+ }
+  
+  
+  .content {
+   z-index: 0;
+    flex: 1;
+    width: 100%; 
+  }
+    
+  

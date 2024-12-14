@@ -1,0 +1,13 @@
+.footerWrapper{
+    width: 100%;
+    background-color: black;
+    height: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.footerText{
+    font-size: x-small;
+    padding: 10px;
+}

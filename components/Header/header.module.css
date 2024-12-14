@@ -1,0 +1,135 @@
+.header {
+  position: fixed;
+  padding: none;
+  width: 100%;
+  z-index: 1;
+  background-color: black;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  padding-right: 7rem;
+}
+.logo {
+  width: 80px;
+  position: absolute;
+  top: 0;
+  left: 18%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  z-index: 2;
+  padding: 0;
+}
+.invino {
+  width: 100%;
+}
+.socialWrapper {
+  display: flex;
+  gap: 1rem;
+  padding-right: 2rem;
+}
+.socialIcon {
+  width: 25px;
+  height: 25px;
+}
+.mobileMenu {
+  display: none;
+  position: absolute;
+  transform: translateX(100%);
+  width: 100%;
+  height: 400px;
+  background-color: black;
+  /* background-image: radial-gradient(
+    circle farthest-corner at 45% 20%,
+    rgb(114, 4, 20) 0%,
+    rgba(4, 0, 4, 1) 90%
+  ); */
+  right: 0;
+  transition: transform 0.5s ease-out, opacity 0.4s ease-in;
+  visibility: hidden;
+  opacity: 0;
+}
+.mobileMenu.active {
+  transform: translateX(0);
+  position: fixed;
+  right: 0;
+  top: 60px;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.links {
+  list-style: none;
+}
+.mobileLinks {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 20px;
+  gap: 15px;
+}
+.mobileLinks a {
+  text-decoration: none;
+  color: white;
+}
+.closeMenu {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.burgerMenu {
+  display: none;
+}
+.closeMenu {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .header {
+    padding-right: 20px;
+  }
+  .mobileMenu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 15px;
+  }
+  .socialWrapper {
+    display: none;
+  }
+  .socialMobile {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  .burgerMenu {
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    cursor: pointer;
+  }
+  .burger {
+    width: 40px;
+  }
+  .closeMenu {
+    display: block;
+    cursor: pointer;
+  }
+  /* .logo {
+    width: 70px;
+  } */
+}

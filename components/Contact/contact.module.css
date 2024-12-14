@@ -1,0 +1,56 @@
+.contactWrapper{
+    margin: 0;
+    width: 100%;
+   height: 100vh;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.photoBackground{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.blackBox1 {
+    background-color: rgba(4, 4, 4, 0.5);
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    position:absolute;
+    right: 0;
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+    justify-content: space-between;
+  }
+  .textWrapper {
+    padding: 30px 20px 30px 40px;
+    gap: 10px;
+  }
+  .infoText {
+    font-family: var(--font-family-base);
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+  }
+  .mapLink {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 100;
+  }
+  .socialWrappers{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px ;
+  }
+  
