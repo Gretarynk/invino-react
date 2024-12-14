@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 // Define the shape of props
-interface ContactProps {
+export interface ContactProps {
   address: string;
   phone: string;
   workingHours: {
