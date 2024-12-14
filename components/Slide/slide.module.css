@@ -1,87 +1,80 @@
 .container {
-    
-    height: auto;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    flex: 1;
-    
-    
-  }
-  
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex: 1;
+}
+
+.blackBox {
+  background-color: rgba(4, 4, 4, 0.5);
+  width: 300px;
+  height: 95vh;
+  z-index: 2;
+  position: relative;
+  top: 0;
+  left: 22%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem;
+  justify-content: space-between;
+}
+.textWrapper {
+  padding: 50px;
+  gap: 10px;
+}
+.infoText {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+}
+.mapLink {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-left: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.sliderWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  z-index: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: -1;
+}
+
+.fas {
+  color: rgb(241, 3, 3);
+}
+
+@media screen and (max-width: 769px) {
   .blackBox {
-    background-color: rgba(4, 4, 4, 0.5);
-    width: 300px;
-    height: 95vh;
-    z-index: 2;
-    position: relative;
-    top: 0;
-    left: 22%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 7rem;
-    justify-content: space-between;
+    width: 80%;
   }
   .textWrapper {
-    padding: 50px;
-    gap: 10px;
+    padding: 30px;
   }
   .infoText {
-    
     font-weight: 400;
-    font-size: 16px;
-    padding: 10px;
-    color: white;
-    
+    font-size: 17px;
   }
-  .mapLink {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-    padding-left: 10px;
-    font-size: 16px;
-    text-decoration: none;
-    
-  }
-  
-  .sliderWrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
-    z-index: 0;
-  }
-  
-  .slide.active {
-    opacity: 1;
-    z-index: -1;
-  }
-  
-  .fas {
-    color: rgb(241, 3, 3);
-  }
-  
-  @media screen and (max-width: 769px) {
-   .blackBox{
-    width: 80%;
-   }
-    .textWrapper {
-      padding: 30px;
-    }
-    .infoText {
-      font-weight: 400;
-      font-size: 17px;
-    }
-  }
-  
+}

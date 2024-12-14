@@ -32,6 +32,7 @@
   display: flex;
   gap: 1rem;
   padding-right: 2rem;
+  padding-left: 1rem;
 }
 .socialIcon {
   width: 25px;
@@ -102,9 +103,10 @@
   }
   .mobileMenu {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    padding-left: 15px;
+    padding-left:50px;
     font-size: 18px;
   }
   .socialWrapper {
