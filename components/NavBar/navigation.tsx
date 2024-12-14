@@ -1,5 +1,5 @@
 import styles from '../NavBar/navigation.module.css'
-import links from '@/constans/links'
+import Link from 'next/link';
 
 type LinkType={
     id:number;
@@ -19,7 +19,7 @@ const Navigation =({links=[]}:NavBarProps)=>{
             <ul className={styles.links}>
                 {links.map((link)=>{
                     return(
-                        <a className={styles.nav} href={link.href} key={link.id}>{link.title}</a>
+                        <Link className={styles.nav} href={link.href} key={link.id}>{link.title}</Link>
                     )
                 })}
  

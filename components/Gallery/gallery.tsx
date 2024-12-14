@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./gallery.module.css";
-import { title } from "process";
+
 
 interface Photo {
   id: number;
